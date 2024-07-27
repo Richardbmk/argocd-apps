@@ -3,6 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-certdiscoverytls-demo
+  namespace: ns-app1
   annotations:
     # Load Balancer Name
     alb.ingress.kubernetes.io/load-balancer-name: certdiscoverytls-ingress
